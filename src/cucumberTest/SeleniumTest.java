@@ -31,13 +31,13 @@ public class SeleniumTest {
  
         // Enter Username on the element found by above desc.
  
-        driver.findElement(By.id("log")).sendKeys("testuser_1"); 
+        driver.findElement(By.id("log")).sendKeys("test123321"); 
  
         // Find the element that's ID attribute is 'pwd' (Password)
  
         // Enter Password on the element found by the above desc.
  
-        driver.findElement(By.id("pwd")).sendKeys("Test@123");
+        driver.findElement(By.id("pwd")).sendKeys("welcome1");
  
         // Now submit the form. WebDriver will find the form for us from the element 
  
