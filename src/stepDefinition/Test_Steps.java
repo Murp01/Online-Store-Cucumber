@@ -26,14 +26,6 @@ public class Test_Steps {
         driver.findElement(By.xpath(".//*[@id='account']/a")).click();
 	}
 	
-/*	@When("^User enters \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void the_user_enters_and(String username, String password) throws Throwable {
-        driver.findElement(By.id("log")).sendKeys(username);
-        driver.findElement(By.id("pwd")).sendKeys(password);
-		driver.findElement(By.id("login")).click();
-	}*/
-	
-	
 	@When("^the user enters \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void the_user_enters_and(String username, String password) throws Throwable {
         driver.findElement(By.id("log")).sendKeys(username);

@@ -9,7 +9,7 @@ Scenario Outline: Successful login with valid credentials
 Examples:
 	| username   | password |
 	| test123321 | welcome1 | 
-	| test123322 | welcome2 |
+	| test123322 | welcome2 |	
 	
 Scenario: Successful logout
 	When the user logs out of the application
