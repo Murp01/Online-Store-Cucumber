@@ -25,13 +25,14 @@ public class Test_Steps {
 	public void navigating_to_the_login_page() throws Throwable {
         driver.findElement(By.xpath(".//*[@id='account']/a")).click();
 	}
-
-/*	@When("^the user enters \”([^\”]*)\” and \”([^\”]*)\”$")
-	public void the_user_enters_the_login_name_and_password() throws Throwable {
-        driver.findElement(By.id("log")).sendKeys("test123321");
-        driver.findElement(By.id("pwd")).sendKeys("welcome1");
-        driver.findElement(By.id("login")).click();
+	
+/*	@When("^User enters \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void the_user_enters_and(String username, String password) throws Throwable {
+        driver.findElement(By.id("log")).sendKeys(username);
+        driver.findElement(By.id("pwd")).sendKeys(password);
+		driver.findElement(By.id("login")).click();
 	}*/
+	
 	
 	@When("^the user enters \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void the_user_enters_and(String username, String password) throws Throwable {
