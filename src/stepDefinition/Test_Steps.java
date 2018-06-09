@@ -34,7 +34,9 @@ public class Test_Steps {
 	}*/
 	
 	@When("^the user enters \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void the_user_enters_and(String arg1, String arg2) throws Throwable {
+	public void the_user_enters_and(String username, String password) throws Throwable {
+        driver.findElement(By.id("log")).sendKeys(username);
+        driver.findElement(By.id("pwd")).sendKeys(password);
 		driver.findElement(By.id("login")).click();
 	}
 
@@ -52,6 +54,6 @@ public class Test_Steps {
 	@Then("^logout successful will be displayed$")
 	public void logout_successful_will_be_displayed() throws Throwable {
 		System.out.println("LogOut Successfully");
-		driver.quit(); 
+		//driver.quit(); 
 	}
 }
